@@ -19,7 +19,6 @@ public class FunctionHuman {
                     e.getOccupation() + ", address: " + e.getAddress());
         }
 
-
 //        SuperHuman[] superHuman = new SuperHuman[3];
 //        superHuman[0] = new SuperHuman("good", "Superman", "Flying");
 //        superHuman[1] = new SuperHuman("bad", "Villan", "Disappearing");
