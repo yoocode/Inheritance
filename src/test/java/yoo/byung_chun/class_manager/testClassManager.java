@@ -32,7 +32,7 @@ public class testClassManager {
         int quantity = 10;
         int value = 5;
         int expectedReturnValue = quantity * value;//50
-        Product product = new Product("Shampoo", 10, 1, 10);
+        Product product = new Product("Shampoo", 10, 1, 100);
 
         //When
         int actualReturnValue = product.returnProductValue();
