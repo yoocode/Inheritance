@@ -8,6 +8,8 @@ import java.util.ArrayList;
 public class Inventory extends ArrayList<Product> {
 
 
+    Inventory inventory = new Inventory();
+
     public int getTotalValueOfInventory(){
 
         int sum = 0;

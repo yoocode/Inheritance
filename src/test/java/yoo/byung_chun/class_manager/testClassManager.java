@@ -1,6 +1,7 @@
 package yoo.byung_chun.class_manager;
 
 import org.junit.Test;
+import org.junit.Assert;
 
 import static org.junit.Assert.assertEquals;
 
@@ -21,9 +22,23 @@ public class testClassManager {
         int expectedProductValue = 300;
 
         //Then
-        assertEquals(actualProductValue, expectedProductValue);
+        Assert.assertEquals(actualProductValue, expectedProductValue);
+    }
 
+    @Test
 
+    public void testReturnProductValue(){
+        //Given
+        int quantity = 10;
+        int value = 5;
+        int expectedReturnValue = quantity * value;//50
+        Product product = new Product("Shampoo", 10, 1, 10);
 
+        //When
+        int actualReturnValue = product.returnProductValue();
+        int actualProductValue = 100;
+
+        //Then
+        Assert.assertEquals(expectedReturnValue, actualReturnValue);
     }
 }
